@@ -1,34 +1,47 @@
-# 🧠 Mintbot
+# 🧠 Persona.ai
 
-Mintbot is an interactive AI assistant built using [LangGraph](https://github.com/langchain-ai/langgraph) that supports **dynamic persona switching**, **speech-to-text input**, and a user-friendly **frontend interface**. It's designed to deliver a personalized and natural conversational experience.
+Persona.ai is a personal AI with a bit of character, built using [LangGraph](https://github.com/langchain-ai/langgraph) that supports **dynamic persona switching**, **Seamless Voice Call**, and a user-friendly **frontend interface with famous Celebrities**. It's designed to deliver a personalized and natural conversational AI friend that's motivates and encourages you.
 
 ---
 
 ## 🚀 Features
 
-- ✨ **Dynamic Characters:** Easily switch between different personas via LangGraph prompt templates.  
-- 🎙️ **Voice Input:** Use the `keyboard` library to capture speech-to-text input for a hands-free experience.
-- 🔊**Voice Output:** Use `OpenVoice` to clone character voices like Elon Musk or anime girl etc
+- ✨ **Various Characters:** Easily switch between different personas via LangGraph prompt templates.  
+- 🎙️ **Voice Call:** Talk with your AI friend seamless without much waiting  
 - 🖥️ **Frontend UI:** Simple and clean interface to chat with your personalized AI assistant.
 
 ---
+##  Upcoming Features
 
+- **🧠 Memory Database:** It doesn't just chat—it remembers. Your personality, your quirks, your rants... stored locally with RAG-powered recall.
+- **💾 Local Storage:** All yours. Nothing goes to the cloud unless you say so.
+- **🔓 Uncensored Mode:** No more “I can’t help with that.” Your characters speak their mind—raw, real, and unfiltered.
+- **Voice:** Character specific voice with emotions. 
+
+---
 ## 📌 Goals / Todo
 
-- [ ] Integrate multiple character personalities into the LangGraph template.  
-- [ ] Add real-time speech-to-text functionality using the `keyboard` library.  
-- [ ] Build a responsive frontend for seamless interaction.
+- ✅ **Multi-Character Intelligence:** Integrate diverse personalities into the LangGraph pipeline.
+- ✅ **Real-Time Voice Input:** Add instant speech-to-text using the `keyboard` library.
+- ✅ **Responsive Frontend:** Smooth, app-like UI built with React & Next.js.
+- ✅ **Call UI:** Voice-enabled character calls with WebRTC.
+
+- [ ] **Customizable Characters:** Let users build their own AI personas—name, voice, style, memory.
+- [ ] **Uncensored Personalities:** Enable filter-free, boundary-pushing conversations.
+- [ ] **Local Brain:** Store long-term memory and chats privately using embedded RAG on-device.
 
 ---
 
 ## 📁 Project Structure (planned)
 
 ```
-mintbot/
-├── langgraph_config/        # Prompt templates & persona definitions
-├── stt/             # STT handling using keyboard/microphone
-├── frontend/                # Web interface (Streamlit/Next.js/etc.)
-├── main.py                  # Entry point for launching the bot
+Persona/
+├── FrontEnd/        # Prompt templates & persona definitions
+├── BackEnd/
+    ├── prompts
+    ├── main.py
+    ├── server.py
+    ├── Lang_Core.py
 └── README.md                # Project documentation
 ```
 
@@ -38,9 +51,8 @@ mintbot/
 
 - `LangGraph` – For building conversation flows  
 - `Gemini / LLM` – Core language model  
-- `keyboard` – Lightweight input capture for STT
-- `OpenVoice TTS` - A voice clonning TTS
-- `Streamlit` or `Next.js` – Frontend interface  
+- `FastRTC` – Lightweight input capture for Voice Call
+- `Next.js| React` – Frontend interface  
 
 ---
 
