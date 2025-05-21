@@ -41,4 +41,14 @@ export const characters = [
             "Stay ahead of the trends and keep it real."
         ],
     },
+    {
+        id: "agent-character-1700000000000",
+        name: "Agent Character",
+        creator: "AI Agent",
+        avatar: "/placeholder-user.jpg",
+        description: "A character created by the AI agent.",
+        greeting: "Hello, I'm Agent Character. What's on your mind?",
+        voice: "Puck",
+        responses: ["Nice to meet you! I'm Agent Character.","What can I help you with today?","Ask me anything!"]
+    }
 ];
